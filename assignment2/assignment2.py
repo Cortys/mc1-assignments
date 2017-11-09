@@ -26,7 +26,7 @@ def distances(pos):
     return np.array([distance.euclidean(a, pos) for a in antennas])
 
 
-samples = np.linspace(-aCount * posOffset / 1.5, aCount * posOffset / 2, 100)
+samples = np.linspace(-aCount * posOffset / 1.5, aCount * posOffset / 1.5, 100)
 grid = [(x, y) for x in samples for y in samples]
 x = [p[0] for p in grid]
 y = [p[1] for p in grid]
